@@ -1,12 +1,21 @@
-/* bucle para mostrar la suma y la media de los números introducidos hasta introducir un numero negativo y ahi mostrar el resultado */
+/* introduce un número hasta que este sea negativo */
 
-var suma=0;
-var contador=0;
 
-do {
-    var numero = parseInt(prompt('introduce numero hasta que metas numero negativo', 0));
-    if (isNaN(numero)){
-        numero = 0;
-    }
+var numNegativo = (numero) =>{
 
-}while(num1 < 0)
+        do {
+        var numero = parseInt(prompt("introduce numero hasta que metas numero negativo", "")); 
+            console.log(numero)
+            if (isNaN(numero)){
+                numero = 0;
+                console.log(numero);
+            }
+
+        } while (numero >= 0);
+
+}
+
+numNegativo();
+
+
+
