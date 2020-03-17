@@ -1,7 +1,14 @@
 'use strict'
 
+
+/*=============================================
+=            FIXME TIMMER            =
+=============================================*/
+
+
 window.addEventListener("load", () => {
-  /*----------  NOTE setInterval timer para que se ejecute cada cierto intervalo lo que sea  ----------*/
+  
+  /*----------  TODO  setInterval timer para que se ejecute cada cierto intervalo lo que sea  ----------*/
 
 let btnStart = document.querySelector("#start");
 let btnStop = document.querySelector("#stop");
@@ -22,7 +29,7 @@ btnStart.addEventListener("click", () => {
 
 });
 
-  /*----------  NOTE  clear interval (() => {    
+  /*----------  TODO   clear interval (() => {    
 }, timeout); para que se ejecute una vez nada mas en el intervalo que diga  ----------*/
 
     btnStop.addEventListener("click", () => {
@@ -30,7 +37,7 @@ btnStart.addEventListener("click", () => {
     clearInterval(tiempo);
     });
 
-  /*----------  NOTE setTimeout(() => {
+  /*----------  TODO  setTimeout(() => {
         
     }, timeout); para que se ejecute una vez nada mas en el intervalo que diga  ----------*/
 

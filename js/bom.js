@@ -1,15 +1,24 @@
 'use strict';
 
 
+/*=============================================
+=          FIXME     WINDOW        =
+=============================================*/
 
-/*----------  NOTE anchura y altura en navegador y de pantalla ----------*/
+
+
+/*=====  End of Section comment block  ======*/
+
+
+
+/*----------  TODO  anchura y altura en navegador y de pantalla ----------*/
 
 let getBom = () => {
     console.log(`anchura pantalla: ${window.innerWidth}, altura pantlla: ${window.innerHeight}`);
     console.log(`anchura screen: ${screen.width}, altura screen: ${screen.height}`);
 };
 
-/*----------  NOTE urls  - location  - redirigir ----------*/
+/*----------  TODO urls  - location  - redirigir ----------*/
 
 console.log(window.location);
 console.log(window.location.href);
@@ -18,7 +27,7 @@ let redirigir = (url) => {
     window.location.href = url;
 }
 
-/*----------  NOTE abrir ventana  - ancho y alto ----------*/
+/*----------  TODO  abrir ventana  - ancho y alto ----------*/
 
 let abrirVentana = (url) =>{
     window.open(
