@@ -16,7 +16,7 @@ document.querySelector('#contenido').innerHTML= localStorage.getItem('titulo')
 
 formulario.addEventListener('submit', addTitle, false)
 
-console.log('funciona')
+console.log('.  funciona')
 
 
 })
