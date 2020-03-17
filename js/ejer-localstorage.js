@@ -7,7 +7,9 @@ let formulario = document.getElementById('form')
 
 let addTitle = (dato)=> {
 let title = document.getElementById('titulo').value;
- console.log(dato)
+let memory = localStorage.setItem('titulo', title)
+document.querySelector('#contenido').innerHTML= localStorage.getItem('titulo')
+
 }
 
 
