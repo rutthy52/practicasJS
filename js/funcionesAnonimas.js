@@ -4,7 +4,7 @@
 
 
 /*=============================================
-=           NOTE   = FUNCIONES ANONIMAS            =
+=           FIXME    = FUNCIONES ANONIMAS            =
 =============================================*/
 
 var calcular = (number1, number2, mostrar, sumaDoble) => {
@@ -17,7 +17,6 @@ var calcular = (number1, number2, mostrar, sumaDoble) => {
 };
 
 
-/*=====  End of NOTE = FUNCIONES ANONIMAS  ======*/
 
 
 calcular(2,7, function(dato){
@@ -29,7 +28,7 @@ calcular(2,7, function(dato){
 
 
 /*=============================================
-=            NOTE = FUNCIONES FLECHA DENTRO DE PARAMETROS            =
+=            FIXME  = FUNCIONES FLECHA DENTRO DE PARAMETROS            =
 =============================================*/
 calcular(
   2,
@@ -42,8 +41,6 @@ calcular(
   }
 );
   
-
-/*=====  End of NOTE = FUNCIONES FLECHA DENTRO DE PARAMETROS  ======*/
 
 
 

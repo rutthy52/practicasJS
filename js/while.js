@@ -1,5 +1,10 @@
 'use strict';
 
+/*=============================================
+=            REVIEW EJERCICIO PROMPT          =
+=============================================*/
+
+
 //var num1 = parseInt(prompt("introduce numero 1", ""));
 //var num2 = parseInt(prompt("introduce numero 2", ""));
 //console.log(num1, num2);

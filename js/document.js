@@ -1,5 +1,16 @@
 'use strict';
 
+
+/*=============================================
+=            FIXME  DOCUMENT          =
+=============================================*/
+
+
+
+/*=====  End of Section comment block  ======*/
+
+
+
 let caja = document.getElementById('mi-caja');
 console.log(caja.innerHTML);
 caja.innerHTML = "nuevo contenido"
@@ -11,7 +22,7 @@ let cambiaColor = (color) =>{
 }
 
 
-/*----------  NOTE = buscar todos las tags iguales  ----------*/
+/*----------  TODO    = buscar todos las tags iguales  ----------*/
 
 let todosDivs = new Array();
 todosDivs = document.querySelectorAll('div');
@@ -20,7 +31,8 @@ console.log(todosDivs);
 
 
 
-/*----------  NOTE = CREATELEMENT/APPEND/PREPEND/TYPEOF/TEXTCONTENTcreate Element sacar los datos de unos elementos y pintarlos en otros  ----------*/
+/*----------  TODO     = CREATELEMENT/APPEND/PREPEND/TYPEOF/TEXTCONTENTcreate Element sacar los datos de unos elementos y pintarlos en otros  ----------*/
+
 let section = document.getElementById('mi-section');
 section.prepend(document.createElement('hr'));
 
@@ -35,7 +47,7 @@ for(let item in todosDivs ){
     
 }   
 
-/*----------  NOTE = busqueda por clases y añadir estilos  ----------*/
+/*----------  TODO   = busqueda por clases y añadir estilos  ----------*/
 
 
 for (let cl in todosDivs){

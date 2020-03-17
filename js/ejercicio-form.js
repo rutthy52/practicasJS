@@ -14,6 +14,9 @@
 
 
 
+/*----------  REVIEW EJERCICIO FORMULARIO  ----------*/
+
+
 window.addEventListener("load", () => {
 
     let pintar = (datos) =>{
@@ -22,7 +25,7 @@ window.addEventListener("load", () => {
 
         for (let item in datos) {
 
-          /*----------  FIXME append con HTML (injectar HTML) ----------*/
+          /*----------  TODO append con HTML (injectar HTML) ----------*/
 
           contenido.insertAdjacentHTML("beforeend", `<p>${datos[item]}</p>`);
           //o

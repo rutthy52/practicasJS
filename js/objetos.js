@@ -1,5 +1,10 @@
 'use strict'
 
+
+/*=============================================
+=            FIXME OBJETOS Y CLASES            =
+=============================================*/
+
 var persona_1 ={
     nombre : "Pedro",
     apellido: "gonzalez",

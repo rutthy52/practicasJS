@@ -9,11 +9,11 @@ window.addEventListener('load', ()=>{
     btn.style.padding = "20px";
 
 /*=============================================
-=            NOTE capturar eventos = 
+=            FIXME   capturar eventos = 
 =============================================*/
 
 
-/*----------  NOTE CLICK ----------*/
+/*----------  TODO  CLICK ----------*/
 
     btn.addEventListener("click", () => {
       cambiaColor("red");
@@ -30,7 +30,7 @@ window.addEventListener('load', ()=>{
       }
     };
 
-/*----------  NOTE KEYDOWN y mostrar tecla ----------*/
+/*----------  TODO  KEYDOWN y mostrar tecla ----------*/
 
 
     document.addEventListener("keydown", (e) => {
@@ -45,6 +45,5 @@ window.addEventListener('load', ()=>{
  
 })
 
-/*=====  End of Section comment block  ======*/
 
 
