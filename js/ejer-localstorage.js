@@ -5,15 +5,10 @@ window.addEventListener('load', ()=>{
 
 let formulario = document.getElementById('form')
 
-let addTitle = ()=> {
-
-let title = new Array();
-
-title = document.getElementById('titulo').value;
-
-for (let i in title){
-    console.log(title[i])
-    }
+let addTitle = (dato)=> {
+let title = document.getElementById('titulo').value;
+let memory = localStorage.setItem('titulo', title)
+document.querySelector('#contenido').innerHTML= localStorage.getItem('titulo')
 
 }
 
@@ -21,7 +16,7 @@ for (let i in title){
 
 formulario.addEventListener('submit', addTitle, false)
 
-console.log('funciona')
+console.log('.  funciona')
 
 
 })
