@@ -45,7 +45,6 @@ window.addEventListener(
 
 /*----------  TODO limpiar y eliminar localstrore  ----------*/
 
-
   
 );
 
