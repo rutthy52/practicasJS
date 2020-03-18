@@ -1,20 +1,34 @@
+'use strict';
 
-'use strict'
+// añadir pelicula mediante formulario
 
-window.addEventListener('load', ()=>{
+window.addEventListener ('load', () => {
+  let formulario = document.getElementById ('add');
+  let arrayTitulo = [];
 
-let formulario = document.getElementById('add')
+  let addTitle = () => {
+    let title = document.getElementById ('titulo').value;
+    let memory = localStorage.setItem ('titulo', title);
+    let titulo = localStorage.getItem ('titulo');
+    arrayTitulo.push (titulo);
+    console.log (titulo);
+  };
 
-let title
+  let pintar = () => {
+    console.log (arrayTitulo);
+    let contenido = document.getElementById ('contenido');
+  
 
-formulario.addEventListener('click', () => {
+    for (let i in arrayTitulo) {
+      let parrafo = document.createElement ('p');
+      let html = arrayTitulo[i];
+      parrafo.innerHTML += html;
+      contenido.append (parrafo);
+    }
+  };
 
-   title = document.getElementById("titulo").value;
-    
-})
+  formulario.addEventListener ('click', addTitle);
+  pintar ();
 
-   let datos = [];
-   let arrayDAtos = datos.push(title);
-   console.log(arrayDAtos);
-
-})
+  console.log ('funciona');
+});
