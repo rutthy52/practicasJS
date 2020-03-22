@@ -9,11 +9,15 @@ window.addEventListener ('load', () => {
       console.log (usuarios);
 
       //igual que forEach ====  map()
-
+      let ul = document.createElement("ul");
       usuarios.map ((item, i) => {
         let nombre = document.getElementById ('usuarios');
-        let p = document.createElement ('p');
-        p.append (item.first_name);
+        let li = document.createElement("li");
+        li.innerHTML = `NOMBRE: ${item.first_name}  ${item.last_name}<br> EMAIL: ${item.email}`;
+        ul.append(li)
+        nombre.append(ul)
+        document.getElementById('cargando').style.display = 'none'  
       });
     });
 });
+
