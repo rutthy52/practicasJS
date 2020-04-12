@@ -1,0 +1,151 @@
+body {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  margin: 0;
+}
+.red-theme-bg {
+  background-size: cover;
+}
+.container {
+  width: 1024px;
+  background-color: #fff;
+  height: 100vh;
+  padding: 20px;
+  margin: 0px auto;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+h1 {
+  padding: 20px;
+  background-color: red;
+  margin: 0px;
+  color: #fff;
+  text-transform: uppercase;
+}
+#buscador {
+  padding: 5px;
+  background-color: #f1f1f1;
+  min-width: 15vw;
+  height: 35px;
+}
+nav {
+  margin: 15px 0px;
+}
+nav ul {
+  background-color: #505050;
+  display: flex;
+  justify-content: start;
+  padding: 20px;
+  align-items: center;
+}
+
+nav ul li {
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0 20px;
+}
+
+#carousel {
+  background-color: red;
+  min-height: 300px;
+  margin: 40px 0px;
+}
+
+#content {
+  display: flex;
+  justify-content: space-between;
+}
+#posts {
+  width: 70vw;
+  padding-right: 20px;
+}
+.post {
+  max-width: 80%;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.post-title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #505050;
+}
+.post-date {
+  color: #d6d6d6;
+  font-size: 14px;
+}
+
+.comments {
+  color: #fff;
+  padding: 10px;
+  background-color: red;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.text-content {
+  line-height: 25px;
+}
+
+#who-is {
+  width: 30vw;
+  padding: 30px;
+}
+.who-is-title {
+  background-image: url("../img/lines.png");
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+.who-is-title > p {
+  font-weight: bold;
+  padding: 5px;
+  background-color: #fff;
+  width: max-content;
+  margin: 0 auto;
+}
+.who-is-content {
+  padding: 20px;
+  line-height: 25px;
+}
+.theme-botoms {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: auto;
+  padding: 5px;
+  position: fixed;
+  top: 50%;
+  left: 0px;
+}
+.theme-botoms > div {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+#red-theme {
+  background-color: red;
+}
+#green-theme {
+  background-color: green;
+}
+#blue-theme {
+  background-color: blue;
+}
