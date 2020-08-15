@@ -5,24 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyeco JS</title>
     <link type="text/css" href="css/main.css" rel="stylesheet" />
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/interfaceUI.js" type="text/html"></script>
+    <script src="js/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body class="theme-bg">
     <div class="container">
-      <header>
-        <h1>Practicando JS</h1>
-        <div id="buscador"></div>
-      </header>
-      <nav>
-        <ul>
-          <li>Inicio</li>
-          <li>Calculadora</li>
-          <li>Reloj</li>
-          <li>Juego Chapuza</li>
-          <li>Contacto</li>
-        </ul>
-      </nav>
-      <section id="carousel"></section>
+      <section id="header">
+        <div class="login"><a href="">Login</a></div>
+        <header>
+          <h1>Practicando JS</h1>
+          <div id="buscador"></div>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre_mi.html">Sobre mi</a></li>
+            <li><a href="insertar_post.html">Insertar noticia</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="reloj"></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section id="carousel">
+
+          <div class="slider-wrapper theme-light">
+            <div id="slider" class="nivoSlider">
+              <img
+                src="img/images-carrusel/toystory.jpg"
+                data-thumb="demo/images/toystory.jpg"
+                alt=""
+                title="#htmlcaption"
+              />
+              <a href="http://dev7studios.com"
+                ><img
+                  src="img/images-carrusel/up.jpg"
+                  data-thumb="demo/images/up.jpg"
+                  alt=""
+                  title="This is an example of a caption"
+                  title="#htmlcaption"
+              /></a>
+              <img
+                src="img/images-carrusel/walle.jpg"
+                data-thumb="demo/images/walle.jpg"
+                alt=""
+                data-transition="slideInLeft"
+                title="#htmlcaption"
+              />
+              <img
+                src="img/images-carrusel/nemo.jpg"
+                data-thumb="demo/images/nemo.jpg"
+                alt=""
+                title="#htmlcaption"
+              />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+              <strong>This</strong> is an example of a <em>HTML</em> caption
+              with <a href="#">a link</a>.
+            </div>
+          </div>
+      </section>
       <section id="content">
         <article id="posts">
           <div class="post">
@@ -82,6 +128,9 @@
         <div id="green-theme"></div>
         <div id="blue-theme"></div>
       </aside>
+      <section id="footer">
+      <footer> @copyright ruth</footer>
+      </section>
     </div>
   </body>
 </html>

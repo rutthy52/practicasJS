@@ -1,29 +1,79 @@
+@import "../css/nivo-slider/nivo-slider.css";
+@import "../css/nivo-slider/themes/light/light.css";
+
 body {
-  width: 100vw;
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 p {
   margin: 0;
 }
-.red-theme-bg {
-  background-size: cover;
-}
-.container {
-  width: 1024px;
-  background-color: #fff;
-  height: 100vh;
-  padding: 20px;
-  margin: 0px auto;
-  height: auto;
+
+footer {
+  background-color: #282828;
+  min-height: 50px;
+  width: 100%;
+  color: #f1f1f1;
 }
 
+.theme-bg-red {
+  background-image: url("../img/rojo.jpg");
+}
+.theme-bg-green {
+  background-image: url("../img/hojas.jpg");
+}
+.theme-bg-blue {
+  background-image: url("../img/cielo.jpg");
+}
+
+.login a {
+  color: #000;
+  text-decoration: none;
+  float: right;
+}
+
+#header {
+  position: fixed;
+  max-width: 1024px;
+  background-color: #fff;
+  top: 0;
+  z-index: 999;
+  width: 80%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1064px;
+  background-color: #fff;
+  margin: 0px auto;
+  padding-top: 200px;
+  position: relative;
+}
+
+section {
+  padding: 20px;
+  width: 80%;
+  background-color: #fff;
+  min-width: 1024px;
+  position: relative;
+}
+
+section#footer {
+  padding: 20px 0px;
+  background-color: #282828;
+  height: 50px;
+  color: #f1f1f1;
+  width: 100%;
+}
 header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 20px;
+  width: 100%;
 }
 h1 {
   padding: 20px;
@@ -39,7 +89,7 @@ h1 {
   height: 35px;
 }
 nav {
-  margin: 15px 0px;
+  margin: 15px 0px 0px;
 }
 nav ul {
   background-color: #505050;
@@ -47,6 +97,7 @@ nav ul {
   justify-content: start;
   padding: 20px;
   align-items: center;
+  margin-bottom: 0px;
 }
 
 nav ul li {
@@ -56,11 +107,16 @@ nav ul li {
   list-style: none;
   padding: 0 20px;
 }
+li a {
+  color: #fff;
+  text-decoration: none;
+}
 
 #carousel {
   background-color: red;
   min-height: 300px;
   margin: 40px 0px;
+  width: auto;
 }
 
 #content {
@@ -148,4 +204,34 @@ nav ul li {
 }
 #blue-theme {
   background-color: blue;
+}
+
+.formulario-box {
+  margin: 0px auto;
+  width: 75%;
+  margin-top: 20px;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin: 10px 0;
+}
+
+#accordion h3 {
+  padding: 10px;
+  margin: 0px;
+  border-radius: 0px;
+}
+#accordion h3 + div {
+  padding: 20px;
+}
+.ui-state-active {
+  background: cadetblue;
+}
+.reloj {
+  color: #fff;
+  position: absolute;
+  right: 20px;
 }

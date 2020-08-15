@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insertar POST</title>
+    <link type="text/css" href="css/main.css" rel="stylesheet" />
+    <link type="text/css" href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet"/>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/interfaceUI.js" type="text/html"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+  <body class="theme-bg">
+    <div class="container">
+      <section id="header">
+        <div class="login"><a href="">Login</a></div>
+        <header>
+          <h1>Practicando JS</h1>
+          <div id="buscador"></div>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre_mi.html">Sobre mi</a></li>
+            <li><a href="insertar_post.html">Insertar noticia</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section id="formulario">
+        <div class="formulario-box">
+        <h2>Insertar post</h2>
+        <form id="noticia" action="" class="formulario">
+          <label>Titulo</label>
+          <input type="text" name="titulo" placeholder="Titulo" />
+
+          <label>Fecha</label>
+          <input type="text" name="date" id="date-publication" />
+
+          <label>Noticia</label>
+
+          <textarea
+            name="contenido-noticia"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="Publicar noticia" />
+        </form>
+      </div>
+      </section>
+        <aside class="theme-botoms">
+        <div id="red-theme"></div>
+        <div id="green-theme"></div>
+        <div id="blue-theme"></div>
+      </aside>
+      <section id="footer">
+      <footer> @copyright ruth</footer>
+      </section>
+      
+    </div>
+  </body>
+</html>
