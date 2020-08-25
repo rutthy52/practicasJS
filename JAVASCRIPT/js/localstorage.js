@@ -48,11 +48,6 @@ window.addEventListener(
           localStorage.clear();
         }
 
-
-
-  
-
-
 );
 
 
