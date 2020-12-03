@@ -1,0 +1,13 @@
+<h2>Artulos</h2>
+<p>
+  color: {{ color }} - precio: de {{ precio }}€
+  <button (click)="setColor('verde')">Cambia color a verde</button>
+  <button (click)="setPrecio(20)">Cambia precio</button>
+</p>
+<button (click)="mostrarArticulo(false)" *ngIf="vistArticulo">
+  Ocultar articulo
+</button>
+<button (click)="mostrarArticulo(true)" *ngIf="!vistArticulo">
+  Mostrar articulo
+</button>
+<app-zapatillas *ngIf="vistArticulo"> </app-zapatillas>

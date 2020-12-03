@@ -1,0 +1,38 @@
+<p>Mi marca</p>
+<p>
+  <input [(ngModel)]="miMarca" />
+  <button (click)="addMiMarca()">Añadir mi marca</button>
+  <button (click)="getMiMarca()">Mostrar mi marca</button>
+</p>
+<p>{{ miMarca }}</p>
+<h2>Marcas diponibles</h2>
+<ul>
+  <li *ngFor="let marca of marcas">
+    {{ index }} - {{ marca }}
+    <button (click)="deleteMiMarca(marca)">Borrar mi marca</button>
+  </li>
+</ul>
+<hr />
+
+<h2>{{ titulo }} disponibles</h2>
+<ul>
+  <li
+    *ngFor="let deportiva of zapatillas"
+    [ngClass]="{
+      'dibujo-lunares': deportiva.dibujo == 'lunares',
+      'marca-nike': deportiva.marca == 'nike',
+      'alto-precio': deportiva.precio > 50
+    }"
+  >
+    {{ deportiva.dibujo }} - {{ deportiva.marca }} -
+    <!--<strong [class.alto-precio]="deportiva.precio > 50">{{
+      deportiva.precio
+    }}</strong>-->
+    <strong> {{ deportiva.precio }}</strong>
+    <span
+      [ngStyle]="{ background: 'yellow', marginLeft: '10px' }"
+      *ngIf="deportiva.stock == false"
+      >// SIN STOCK</span
+    >
+  </li>
+</ul>

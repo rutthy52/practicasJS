@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyeco JS</title>
+    <link type="text/css" href="css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
+  </head>
+  <body class="theme-bg-blue">
+    <header id="header">
+      <div class="reloj" id="reloj"></div>
+      <div id="login" class="login-class">Login</div>
+      <div class="header">
+        <h1>Practicando JS</h1>
+        <div id="buscador"></div>
+      </div>
+      <nav>
+        <ul>
+          <li id="home">Inicio</li>
+          <li id="sobre-mi">Sobre mi</li>
+          <li id="insertar-noticia">
+            Insertar noticia
+          </li>
+          <li id="contacto">Contacto</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- home -->
+      <section class="home">
+        <article id="carousel">
+          <div class="slider-wrapper theme-light">
+            <div id="slider" class="nivoSlider">
+              <img
+                src="img/images-carrusel/toystory.jpg"
+                data-thumb="demo/images/toystory.jpg"
+                alt=""
+                title="#htmlcaption"
+              />
+              <a href="http://dev7studios.com"
+                ><img
+                  src="img/images-carrusel/up.jpg"
+                  data-thumb="demo/images/up.jpg"
+                  alt=""
+                  title="This is an example of a caption"
+                  title="#htmlcaption"
+              /></a>
+              <img
+                src="img/images-carrusel/walle.jpg"
+                data-thumb="demo/images/walle.jpg"
+                alt=""
+                data-transition="slideInLeft"
+                title="#htmlcaption"
+              />
+              <img
+                src="img/images-carrusel/nemo.jpg"
+                data-thumb="demo/images/nemo.jpg"
+                alt=""
+                title="#htmlcaption"
+              />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+              <strong>This</strong> is an example of a <em>HTML</em> caption
+              with <a href="#">a link</a>.
+            </div>
+          </div>
+          <h2>Home</h2>
+        </article>
+        <article id="content">
+          <div id="posts">
+            <div class="post" id="post"></div>
+          </div>
+          <aside id="who-is">
+            <div class="who-is-title">
+              <p>¿Quién soy?</p>
+            </div>
+            <div class="who-is-content">
+              <img class="who-is-img" src="img/caracol.jpg" width="100%" />
+              <p>
+                s simplemente el texto de relleno de las imprentas y archivos de
+                texto. Lorem Ipsum ha sido el texto de relleno estándar de las
+                industrias desde el año 1500, cuando un impresor (N. del T.
+                persona que se dedica a la imprenta) desconocido usó una galería
+                de textos y los mezcló de tal manera que logró hacer un libro de
+                textos especimen. No sólo sobrevivió 500 años, sino que tambien
+                ingresó como texto de relleno en documentos electrónicos,
+                quedando esencialmente igual al original. Fue popularizado en
+                los 60s con la creación de las hojas "Letraset", las cuales
+                contenian pasajes de Lorem Ipsum, y más recientemente con
+                software de autoedición, como por ejemplo Aldus PageMaker, el
+                cual incluye versiones de Lorem Ipsum.
+              </p>
+            </div>
+          </aside>
+        </article>
+      </section>
+
+      <!-- sobre mi -->
+      <section class="sobre-mi">
+        <article>
+          <h2>Sobre mi</h2>
+          <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+              <p>
+                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
+                Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+                condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam
+                mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a
+                velit eu ante scelerisque vulputate.
+              </p>
+            </div>
+            <h3>Section 2</h3>
+            <div>
+              <p>
+                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit
+                amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris
+                turpis porttitor velit, faucibus interdum tellus libero ac
+                justo. Vivamus non quam. In suscipit faucibus urna.
+              </p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+              <p>
+                Nam enim risus, molestie et, porta ac, aliquam ac, risus.
+                Quisque lobortis. Phasellus pellentesque purus in massa. Aenean
+                in pede. Phasellus ac libero ac tellus pellentesque semper. Sed
+                ac felis. Sed commodo, magna quis lacinia ornare, quam ante
+                aliquam nisi, eu iaculis leo purus venenatis dui.
+              </p>
+              <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+              </ul>
+            </div>
+            <h3>Section 4</h3>
+            <div>
+              <p>
+                Cras dictum. Pellentesque habitant morbi tristique senectus et
+                netus et malesuada fames ac turpis egestas. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                Curae; Aenean lacinia mauris vel est.
+              </p>
+              <p>
+                Suspendisse eu nisl. Nullam ut libero. Integer dignissim
+                consequat lectus. Class aptent taciti sociosqu ad litora
+                torquent per conubia nostra, per inceptos himenaeos.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- insertar noticia -->
+
+      <section class="insertar-noticia formulario">
+        <article class="">
+          <h2>Insertar post</h2>
+          <form id="noticia" action="" class="formulario formulario-box">
+            <label>Titulo</label>
+            <input type="text" name="titulo" placeholder="Titulo" />
+
+            <label>Fecha</label>
+            <input type="text" name="date" id="date-publication" />
+
+            <label>Noticia</label>
+
+            <textarea
+              name="contenido-noticia"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="Publicar noticia" />
+          </form>
+        </article>
+      </section>
+
+      <section id="contacto" class="contacto contact-form">
+        <article class="">
+          <h2>Contacta con nosotros</h2>
+          <form id="contactForm" action="" class="formulario formulario-box">
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="nombre" />
+
+            <label>Email</label>
+            <input type="mail" name="email" id="email" />
+
+            <input type="submit" value="contactar" />
+          </form>
+        </article>
+      </section>
+
+      <aside class="theme-botoms">
+        <div id="red-theme"></div>
+        <div id="green-theme"></div>
+        <div id="blue-theme"></div>
+      </aside>
+      <aside class="ir-arriba icon-arrow-up2"></aside>
+    </div>
+    <aside class="login">
+      <article class="login-form">
+        <form id="loginForm" action="#" class="formulario formulario-box">
+          <h2>Entrar</h2>
+          <label>Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="nombre" />
+          <label>Email</label>
+          <input type="email" name="mail" id="mail" />
+          <input type="submit" value="Entrar" />
+        </form>
+        <button id="logout">Salir</button>
+      </article>
+    </aside>
+    <aside class="capa-login"></aside>
+    <footer id="footer">
+      <div>@copyright ruth</div>
+    </footer>
+
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/interfaceUI.js" type="text/html"></script>
+    <script
+      src="js/nivo-slider/jquery.nivo.slider.pack.js"
+      type="text/javascript"
+    ></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
