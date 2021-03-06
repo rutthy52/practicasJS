@@ -3,5 +3,4 @@ class Main {
     console.log("clase cargada");
   }
 }
-
 var main = new Main();

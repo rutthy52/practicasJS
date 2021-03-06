@@ -13,7 +13,7 @@ var n1 = 10;
 var n2 = 12;
 if (n1 == 10) {
     var n1_1 = 44; //no permite redefinir
-    var n2 = 55; // globarl - permite redefinir
+    var n2 = 55; // global - permite redefinir
     console.log(n1_1, n2);
 }
 console.log(n1, n2);

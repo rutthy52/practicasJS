@@ -6,6 +6,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -73,11 +75,11 @@ var Sudadera = /** @class */ (function (_super) {
 }(Articulo));
 var camiseta = new Articulo("camiseta", "red", "nike", 205, 45, false, 45);
 var playera = new Articulo("playera", "green", "nike", 205, 45, false, 45);
-var sudadera = new Sudadera("sudadera", "green", "nike", 205, 45, false, 45);
+var sudaderaN = new Sudadera("sudadera", "green", "nike", 205, 45, false, 45);
 camiseta.setColor("blue");
 //método del decorador
-camiseta.estampacion();
+camiseta.estampar("logo");
 console.log(camiseta);
 console.log(camiseta, playera, " camiseta nuevo color " + camiseta.getColor());
-sudadera.setCapucha(true);
-console.log(sudadera);
+sudaderaN.setCapucha(true);
+console.log(sudaderaN);
